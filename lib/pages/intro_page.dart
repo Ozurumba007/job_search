@@ -29,7 +29,7 @@ class IntroPage extends StatelessWidget {
                 height: 300,
                 width: double.infinity,
                 child: Image.asset(
-                  'asset/intro.png',
+                  'asset/intro2.png',
                 ),
               ),
               const Text(
@@ -46,6 +46,7 @@ class IntroPage extends StatelessWidget {
                 style: TextStyle(fontSize: 20),
                 textAlign: TextAlign.center,
               ),
+              SizedBox(height: 50),
               Container(
                 height: 60,
                 decoration: BoxDecoration(
