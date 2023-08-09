@@ -47,27 +47,30 @@ class IntroPage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 50),
-              Container(
-                height: 60,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.black,
-                ),
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "LET'S GET STARTED",
-                      style: TextStyle(
+              GestureDetector(
+                onTap: () {},
+                child: Container(
+                  height: 60,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.black,
+                  ),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "LET'S GET STARTED",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Icon(
+                        Icons.arrow_forward_rounded,
                         color: Colors.white,
                       ),
-                    ),
-                    SizedBox(width: 10),
-                    Icon(
-                      Icons.arrow_forward_rounded,
-                      color: Colors.white,
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
