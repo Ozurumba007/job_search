@@ -27,12 +27,12 @@ class IntroPage extends StatelessWidget {
               ),
               Container(
                 height: 300,
-                width: 300,
+                width: double.infinity,
                 child: Image.asset(
                   'asset/intro.png',
                 ),
               ),
-              Text(
+              const Text(
                 'Everything you\nneed in one app',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -41,10 +41,33 @@ class IntroPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              Text(
+              const Text(
                 'Finding your dream job is more easier and\nfaster with JobHub',
                 style: TextStyle(fontSize: 20),
                 textAlign: TextAlign.center,
+              ),
+              Container(
+                height: 60,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: Colors.black,
+                ),
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "LET'S GET STARTED",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(width: 10),
+                    Icon(
+                      Icons.arrow_forward_rounded,
+                      color: Colors.white,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
