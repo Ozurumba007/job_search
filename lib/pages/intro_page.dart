@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:job_search_tutorial/pages/home_page.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -51,7 +52,12 @@ class IntroPage extends StatelessWidget {
               ),
               SizedBox(height: 80),
               GestureDetector(
-                onTap: () {},
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ),
+                ),
                 child: Container(
                   height: 60,
                   decoration: BoxDecoration(
