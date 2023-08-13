@@ -10,6 +10,7 @@ class IntroPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Column(
+            // mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 20),
               const Row(
@@ -25,6 +26,7 @@ class IntroPage extends StatelessWidget {
                   ),
                 ],
               ),
+              const SizedBox(height: 20),
               Container(
                 height: 300,
                 width: double.infinity,
@@ -32,21 +34,22 @@ class IntroPage extends StatelessWidget {
                   'asset/intro2.png',
                 ),
               ),
+              const SizedBox(height: 20),
               const Text(
                 'Everything you\nneed in one app',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 40,
-                  fontWeight: FontWeight.w600,
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               const SizedBox(height: 20),
               const Text(
-                'Finding your dream job is more easier and\nfaster with JobHub',
-                style: TextStyle(fontSize: 20),
+                'Finding your dream job is more easier\nand faster with JobHub',
+                style: TextStyle(fontSize: 15),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 50),
+              SizedBox(height: 80),
               GestureDetector(
                 onTap: () {},
                 child: Container(
