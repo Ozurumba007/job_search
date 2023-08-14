@@ -19,10 +19,10 @@ class _HomePageState extends State<HomePage> {
             children: [
               // back text
               const SizedBox(height: 20),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const Text(
+                  Text(
                     'Back',
                     style: TextStyle(
                       fontSize: 20,
@@ -67,6 +67,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               const SizedBox(height: 15),
+
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -85,6 +86,21 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ],
+              ),
+
+              const SizedBox(height: 15),
+              Container(
+                height: 160,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      width: 300,
+                      color: Colors.black,
+                    ),
+                    const SizedBox(width: 15),
+                  ],
+                ),
               ),
             ],
           ),
