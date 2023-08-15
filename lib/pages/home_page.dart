@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
-
+              const SizedBox(height: 20),
               Row(
                 children: [
                   Container(
@@ -97,9 +97,9 @@ class _HomePageState extends State<HomePage> {
                   scrollDirection: Axis.horizontal,
                   children: const [
                     HotJobs(
-                      capitalCountry: ' Toronto, Canada',
-                      nameOfCompany: 'Apple',
-                      nameOfJob: ' Lead Product Manager',
+                      capitalCountry: ' Vienna, Austria',
+                      nameOfCompany: 'Facebook',
+                      nameOfJob: ' Senior Flutter Developer',
                       companyIcon: Icons.facebook,
                       companyIconColor: Colors.blue,
                     ),
@@ -114,6 +114,29 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
+
+              const SizedBox(height: 15),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Recent Post',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    'Show All',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
+              ),
+
+              const SizedBox(height: 15),
             ],
           ),
         ),
