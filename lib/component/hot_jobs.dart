@@ -1,7 +1,19 @@
 import 'package:flutter/material.dart';
 
 class HotJobs extends StatelessWidget {
-  const HotJobs({super.key});
+  final String nameOfCompany;
+  final String nameOfJob;
+  final String capitalCountry;
+  final IconData companyIcon;
+  final Color companyIconColor;
+  const HotJobs({
+    super.key,
+    required this.nameOfCompany,
+    required this.nameOfJob,
+    required this.capitalCountry,
+    required this.companyIcon,
+    required this.companyIconColor,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +23,7 @@ class HotJobs extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         color: Colors.white,
       ),
-      child: const Padding(
+      child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 15.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -22,11 +34,12 @@ class HotJobs extends StatelessWidget {
                 Column(
                   children: [
                     Icon(
-                      Icons.apple,
+                      companyIcon,
                       size: 50,
+                      color: companyIconColor,
                     ),
                     Text(
-                      'Apple',
+                      nameOfCompany,
                       style: TextStyle(
                           fontWeight: FontWeight.w600,
                           // fontSize: 20,
@@ -43,7 +56,7 @@ class HotJobs extends StatelessWidget {
             ),
             SizedBox(height: 18),
             Text(
-              'Lead Product Manager',
+              nameOfJob,
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 fontSize: 20,
@@ -59,7 +72,7 @@ class HotJobs extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  ' Toronto, Canada',
+                  capitalCountry,
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
                   ),

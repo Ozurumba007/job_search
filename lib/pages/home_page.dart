@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../component/hot_jobs.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -93,12 +95,22 @@ class _HomePageState extends State<HomePage> {
                 height: 160,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
-                  children: [
-                    Container(
-                      width: 300,
-                      color: Colors.black,
+                  children: const [
+                    HotJobs(
+                      capitalCountry: ' Toronto, Canada',
+                      nameOfCompany: 'Apple',
+                      nameOfJob: ' Lead Product Manager',
+                      companyIcon: Icons.facebook,
+                      companyIconColor: Colors.blue,
                     ),
-                    const SizedBox(width: 15),
+                    SizedBox(width: 15),
+                    HotJobs(
+                      capitalCountry: ' Toronto, Canada',
+                      nameOfCompany: 'Apple',
+                      nameOfJob: ' Lead Product Manager',
+                      companyIcon: Icons.apple,
+                      companyIconColor: Colors.black,
+                    ),
                   ],
                 ),
               ),
