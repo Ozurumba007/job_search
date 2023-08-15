@@ -101,7 +101,7 @@ class _HomePageState extends State<HomePage> {
                       HotJobs(
                         capitalCountry: ' Vienna, Austria',
                         nameOfCompany: 'Facebook',
-                        nameOfJob: ' Senior Flutter Developer',
+                        nameOfJob: 'Senior Flutter Developer',
                         companyIcon: Icons.facebook,
                         companyIconColor: Colors.blue,
                       ),
@@ -109,7 +109,7 @@ class _HomePageState extends State<HomePage> {
                       HotJobs(
                         capitalCountry: ' Toronto, Canada',
                         nameOfCompany: 'Apple',
-                        nameOfJob: ' Lead Product Manager',
+                        nameOfJob: 'Lead Product Manager',
                         companyIcon: Icons.apple,
                         companyIconColor: Colors.black,
                       ),
@@ -143,6 +143,21 @@ class _HomePageState extends State<HomePage> {
                   companyIcon: Icons.currency_bitcoin,
                   roleNeeded: 'Agba Trader',
                   salaryPerMonth: '\$5000',
+                  color: Colors.yellow.shade800,
+                ),
+                const SizedBox(height: 15),
+                ListOfJobs(
+                  companyIcon: Icons.shopping_cart,
+                  roleNeeded: 'Delivery Manager',
+                  salaryPerMonth: '\$5000',
+                  color: Colors.orange,
+                ),
+                const SizedBox(height: 15),
+                ListOfJobs(
+                  companyIcon: Icons.facebook,
+                  roleNeeded: 'React Native',
+                  salaryPerMonth: '\$5000',
+                  color: Colors.blue.shade800,
                 ),
                 const SizedBox(height: 15),
               ],
@@ -153,7 +168,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         iconSize: 30,
         type: BottomNavigationBarType.fixed,
-        items: [
+        items: const [
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,

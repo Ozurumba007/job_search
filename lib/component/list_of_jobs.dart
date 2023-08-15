@@ -4,12 +4,14 @@ class ListOfJobs extends StatelessWidget {
   final String roleNeeded;
   final String salaryPerMonth;
   final IconData companyIcon;
+  final Color color;
 
   const ListOfJobs({
     super.key,
     required this.roleNeeded,
     required this.salaryPerMonth,
     required this.companyIcon,
+    required this.color,
   });
 
   @override
@@ -20,7 +22,7 @@ class ListOfJobs extends StatelessWidget {
         height: 50,
         width: 50,
         decoration: BoxDecoration(
-          color: Colors.yellow,
+          color: color,
           borderRadius: BorderRadius.circular(12),
         ),
         child: Icon(
