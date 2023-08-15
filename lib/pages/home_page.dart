@@ -51,6 +51,7 @@ class _HomePageState extends State<HomePage> {
                         child: Text(
                           'Search here....',
                           textAlign: TextAlign.start,
+                          style: TextStyle(fontSize: 20),
                         ),
                       ),
                     ),
