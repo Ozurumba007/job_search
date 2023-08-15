@@ -145,13 +145,40 @@ class _HomePageState extends State<HomePage> {
                   salaryPerMonth: '\$5000',
                 ),
                 const SizedBox(height: 15),
-                // ListOfJobs(),
-                // const SizedBox(height: 15),
-                // ListOfJobs(),
               ],
             ),
           ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        iconSize: 30,
+        type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+                color: Colors.black,
+              ),
+              label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.message_rounded,
+                color: Colors.grey,
+              ),
+              label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+                color: Colors.grey,
+              ),
+              label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.settings,
+                color: Colors.grey,
+              ),
+              label: ''),
+        ],
       ),
     );
   }
