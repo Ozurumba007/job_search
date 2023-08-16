@@ -36,6 +36,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
                 const SizedBox(height: 20),
+                // search box + filter
                 Row(
                   children: [
                     Container(
@@ -72,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
                 const SizedBox(height: 15),
-
+                // hotJob and show all Text
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -147,7 +148,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.yellow.shade800,
                 ),
                 const SizedBox(height: 15),
-                ListOfJobs(
+                const ListOfJobs(
                   companyIcon: Icons.shopping_cart,
                   roleNeeded: 'Delivery Manager',
                   salaryPerMonth: '\$5000',

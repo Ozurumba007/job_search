@@ -24,7 +24,7 @@ class HotJobs extends StatelessWidget {
         color: Colors.white,
       ),
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 15.0),
+        padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 15.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -40,32 +40,33 @@ class HotJobs extends StatelessWidget {
                     ),
                     Text(
                       nameOfCompany,
-                      style: TextStyle(
-                          fontWeight: FontWeight.w600,
-                          // fontSize: 20,
-                          color: Colors.grey),
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w600,
+                        // fontSize: 20,
+                        color: Colors.grey,
+                      ),
                     ),
                   ],
                 ),
-                Icon(
+                const Icon(
                   Icons.favorite,
                   color: Colors.red,
                   size: 25,
                 ),
               ],
             ),
-            SizedBox(height: 18),
+            const SizedBox(height: 18),
             Text(
               nameOfJob,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.w600,
                 fontSize: 20,
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Row(
               children: [
-                Text(
+                const Text(
                   '\$2500/m ',
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
@@ -73,7 +74,7 @@ class HotJobs extends StatelessWidget {
                 ),
                 Text(
                   capitalCountry,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.w400,
                   ),
                 ),
